@@ -1,12 +1,15 @@
 import {ScaledSheet} from "react-native-size-matters";
+import Colors from "../../Utils/Colors/Colors";
 
 const styles = ScaledSheet.create({
     mainContainer: {
         flex: 1,
+        backgroundColor: Colors.gray2,
     },
     bgImage: {
         height: '812@s',
         width: '100%',
+        marginBottom: '53@vs',
     },
     topBarStyle: {
         marginTop: '10@vs',
@@ -32,6 +35,23 @@ const styles = ScaledSheet.create({
         position: 'absolute',
         top: '380@vs',
         zIndex: 1000,
+    },
+    flatListCategories: {
+        alignSelf: 'center',
+        marginTop: '20@vs',
+    },
+    devider: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '46@s',
+        width: '100%',
+        backgroundColor: Colors.white,
+        elevation: 5,
+    },
+    saleText: {
+        color: Colors.red1,
+        fontSize: '35@vs',
+        fontWeight: 'bold',
     }
 })
 

@@ -3,6 +3,7 @@ const Images = {
     girlsJacket: require('../../Assets/Images/girlsJacket.png'),
     boysJacket: require('../../Assets/Images/boysJacket.png'),
     jacket: require('../../Assets/Images/jacket.png'),
+    sweatShirt: require('../../Assets/Images/sweatShirt.png'),
 }
 
 export default Images;
