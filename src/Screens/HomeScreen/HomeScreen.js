@@ -31,44 +31,50 @@ const HomeScreen = () => {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
         {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
         {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
         {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
         {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
         {
             name: 'Trousers',
             description: 'This is a description',
             image: Images.sweatShirt,
+            discount: 15,
         },
     ]
 
     const renderItem = (item) => {
         return (
-                <RoundedImage source={item.item.image} text={item.item.name} style={styles.flatListCategories} />
-            
+            <RoundedImage source={item.item.image} text={item.item.name} style={styles.flatListCategories} />
+
         )
     }
 
     const renderClothesData = (item) => {
         return (
-            <SaleItems source={item.item.image} name={item.item.name} description={item.item.description} style={styles.clothesData} />
+            <SaleItems source={item.item.image} name={item.item.name} description={item.item.description} discount={item.item.discount} style={styles.clothesData} />
         )
     }
 

@@ -21,6 +21,19 @@ const styles = ScaledSheet.create({
     },
     salesButton: {
         marginTop: '10@vs',
+    },
+    discountContainer: {
+        height: '23@s',
+        width: '48@s',
+        backgroundColor: Colors.yellow,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'flex-end',
+        marginTop: '10@vs',
+        left: '17@s',
+    },
+    discountText: {
+        fontSize: '10@vs',
     }
 });
 

@@ -1,10 +1,21 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import CustomDrawerContent from './src/CustomDrawerContent/CustomDrawerContent';
 
 const Stack = createNativeStackNavigator();
+
+// function MyDrawer() {
+//   return (
+//     <Drawer.Navigator
+//       drawerContent={(props) => <CustomDrawerContent {...props} />}>
+//       <Drawer.Screen name="HomeScreen" component={HomeScreen} />
+//     </Drawer.Navigator>
+//   );
+// }
+
 
 const App = () => {
   return (
