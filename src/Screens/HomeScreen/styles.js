@@ -1,4 +1,4 @@
-import {ScaledSheet} from "react-native-size-matters";
+import { ScaledSheet } from "react-native-size-matters";
 import Colors from "../../Utils/Colors/Colors";
 
 const styles = ScaledSheet.create({
@@ -52,6 +52,65 @@ const styles = ScaledSheet.create({
         color: Colors.red1,
         fontSize: '35@vs',
         fontWeight: 'bold',
+    },
+    clothesData: {
+        height: '200@s',
+        width: '141@s',
+        margin: '10@s',
+    },
+    salesFlatList: {
+        backgroundColor: Colors.white,
+        alignItems: "center",
+        width: '100%',
+        paddingLeft: '20@s',
+        paddingRight: '20@s',
+        paddingTop: '20@vs',
+    },
+    roundedButtonSeeMore: {
+        marginBottom: '72@s',
+        marginTop: '40@vs',
+        height: '32@s',
+        width: '124@s',
+    },
+    seeMoreText: {
+        fontSize: '18@s',
+    },
+    bottomLogo: {
+        height: '100@s',
+        width: '100@s',
+        marginTop: '64@vs',
+    },
+    bottomView: {
+        paddingLeft: '25@s',
+        paddingBottom: '121@s',
+    },
+    contact: {
+        height: '147@s',
+        width: '41@s',
+    },
+    contactContainer: {
+        marginTop: '20@vs',
+        flexDirection: 'row',
+    },
+    contactText: {
+        color: Colors.black,
+        fontSize: '15@vs',
+    },
+    contactTextContainer: {
+        justifyContent: 'space-between',
+         padding: '15@s',
+    },
+    socialIcons: {
+        marginTop: '34@s',
+        height: '64@s',
+        width: '214@s',
+    },
+    bottomText: {
+        color: Colors.black,
+        fontSize: '18@vs',
+    },
+    bottomTextContainer: {
+        marginTop: '40@vs',
     }
 })
 
