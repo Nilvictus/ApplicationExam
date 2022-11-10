@@ -5,12 +5,13 @@ import Icons from '../../Utils/Icons/Icons';
 
 type Props = {
     style: any,
+    onPress: ()=>void,
 }
 
-const TopBar = (props: Props) => {
+const TopBar = (props: Props, navigation) => {
     return (
         <View style={[styles.mainContainer, props.style]}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>props.onPress()}>
                 <Image source={Icons.menu} style={styles.menuIcon} />
             </TouchableOpacity>
             <TouchableOpacity>

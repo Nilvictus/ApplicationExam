@@ -106,6 +106,7 @@ const styles = ScaledSheet.create({
         width: '214@s',
     },
     bottomText: {
+        marginTop: '10@vs',
         color: Colors.black,
         fontSize: '18@vs',
     },

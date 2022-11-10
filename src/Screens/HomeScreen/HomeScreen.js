@@ -9,7 +9,7 @@ import RoundedImage from '../../Components/RoundedImage/RoundedImage';
 import SaleItems from '../../Components/SaleItems/SaleItems';
 
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
 
     const categories = [
         {
@@ -82,7 +82,7 @@ const HomeScreen = () => {
         <View style={styles.mainContainer}>
             <ScrollView>
                 <ImageBackground source={Images.bgImageClothes} style={styles.bgImage}>
-                    <TopBar style={styles.topBarStyle} />
+                    <TopBar style={styles.topBarStyle} onPress={()=>navigation.openDrawer()}/>
                     <RoundedButtons style={styles.roundedButton} text={"Shop Now"} />
                     <Image source={Images.girlsJacket} style={styles.girlsJacket} />
                     <Image source={Images.boysJacket} style={styles.boysJacket} />
